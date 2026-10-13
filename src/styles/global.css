@@ -1,0 +1,7 @@
+/* Merge shared component classes before Tailwind expands Markdown @apply rules. */
+@import "./main.css";
+@import "./markdown.css";
+@import "./scrollbar.css";
+@import "./transition.css";
+@import "./expressive-code.css";
+@import "./photoswipe.css";
