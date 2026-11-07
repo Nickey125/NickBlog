@@ -49,6 +49,12 @@ A static blog template built with [Astro](https://astro.build).
 4. Run `pnpm new-post <filename>` to create a new post and edit it in `src/content/posts/`.
 5. Deploy your blog to Vercel, Netlify, GitHub Pages, etc. following [the guides](https://docs.astro.build/en/guides/deploy/). You need to edit the site configuration in `astro.config.mjs` before deployment.
 
+## NickBlog 发布（Windows）
+
+写完文章或改好样式后，双击项目根目录的 [发布博客.cmd](./发布博客.cmd)。检查窗口列出的待提交文件和待推送提交；输入 `y` 后，脚本会运行 `pnpm build`，成功后提交所有列出的改动，并推送到 `origin/main`。直接回车可取消。
+
+若需要自定义提交说明，可以在项目终端运行 `node scripts/publish-blog.mjs "更新文章和样式"`。推送成功后，到 Cloudflare Pages 的「部署」页面查看上线状态。
+
 ## 📝 Frontmatter of Posts
 
 ```yaml
